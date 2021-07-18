@@ -57,6 +57,6 @@ int main() {
 	int n,k; // input n and k
     scanf("%d %d",&n,&k); 
 	double x=binary_search(n,k); // storing answer
-	printf("%0.9f",x); // output answer
+	printf("%0.9g",x); // output answer
 	return 0;
 }
