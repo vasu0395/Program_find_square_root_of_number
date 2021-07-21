@@ -1,6 +1,6 @@
 /*
     @vasu 1910990395
-    Program to find square root of number upto 9 decimal places.
+    Program to find square root of number upto K decimal places.
     
 */
 #include <stdio.h>
@@ -55,8 +55,11 @@ double binary_search(long long int number,long long int k) // function to find s
 }
 int main() {
 	int n,k; // input n and k
-    scanf("%d %d",&n,&k); 
+	printf("Enter number and precision\n");
+        scanf("%d %d",&n,&k); 
 	double x=binary_search(n,k); // storing answer
-	printf("%0.9g",x); // output answer
+	printf("Square Root of Number ");
+	printf("%0.*lg",k+1,x); // output answer
+	printf("\n");
 	return 0;
 }
